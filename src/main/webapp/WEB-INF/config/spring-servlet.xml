@@ -28,10 +28,10 @@
 
 	<bean class="org.springframework.jdbc.datasource.DriverManagerDataSource"
 		id="dataSourceRef">
-		<property name="driverClassName" value="${database.driver}"></property>
-		<property name="url" value="${database.url}"></property>
-		<property name="username" value="${database.user}"></property>
-		<property name="password" value="${database.password}"></property>
+		<property name="driverClassName" value="com.mysql.jdbc.Driver"></property>
+		<property name="url" value="jdbc:mysql://localhost:3306/sonoo"></property>
+		<property name="username" value="root"></property>
+		<property name="password" value="root"></property>
 	</bean>
 
 	<bean id="employeeJDBCTemplateRef" class="org.springframework.jdbc.core.JdbcTemplate">
